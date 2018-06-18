@@ -1,15 +1,15 @@
 // 2014 XDN Developers
 // 2018 TurtleCoin Developers
 
-/* Format to two decimal places */
+/* Format to 8 decimal places */
 function fromAtomic(num)
 {
-    return (num / 100).toFixed(2);
+    return (num / 100000000).toFixed(8);
 }
 
 function toAtomic(num)
 {
-    return Math.round(num * 100);
+    return Math.round(num * 100000000);
 }
 
 function callRpc(method, params, callback)
@@ -101,10 +101,10 @@ function getBalance()
 
                 resultNode.innerHTML = "Locked: "
                                      + fromAtomic(json.lockedAmount)
-                                     + " TRTL"
+                                     + " WTIP"
                                      + "</br>Unlocked: "
                                      + fromAtomic(json.availableBalance)
-                                     + " TRTL";
+                                     + " WTIP";
             }
         }
     });
@@ -141,14 +141,14 @@ $(document).ready(function()
         if (amount < config.minAmount)
         {
             resultNode.innerHTML = "Amount is too small! Must be at least "
-                                 + config.minAmount + " TRTL.";
+                                 + config.minAmount + " WTIP.";
             return;
         }
 
         if (fee < config.minFee)
         {
             resultNode.innerHTML = "Fee is too small! Must be at least "
-                                 + config.minFee + " TRTL.";
+                                 + config.minFee + " WTIP.";
             return;
         }
 

@@ -7,8 +7,10 @@
 <head lang="en">
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" name="viewport">
-  <title>box turtle</title>
+  <title>Box WTIP</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
@@ -17,20 +19,16 @@
   </script>
   <script src="rpc.js">
   </script>
-  <style>
-        .rpc-result {
-            font-size: large;
-            color: green;
-        }
-  </style>
+
 </head>
 <body>
   <div class="container">
     <!-- LOGO -->
     <div class="row">
       <div class="col">
-        <p class="display-1">🐢</p>
-        <h1>Box Turtle - Home Wallet</h1>
+        <img class="logo" src="https://wtipwallet.havens.space/assets/img/wtip.png">
+        <!-- <span class="text1">Box Worktips - Home Wallet</span> -->
+        <h1 class="text1">Box Worktips - Home Wallet</h1>
       </div>
     </div><br>
     <!-- HOST AND PORT -->
@@ -39,7 +37,7 @@
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
             <div class="input-group-text">
-              <strong>💳 Host</strong>
+              <strong><i class="fas fa-wallet"></i> Host</strong>
             </div>
           </div><input class="form-control" id="rpcHost" name="textinput" type="text" value="" placeholder="Host">
         </div>
@@ -48,7 +46,7 @@
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
             <div class="input-group-text">
-              <strong>🔌 Port</strong>
+              <strong><i class="fas fa-plug"></i> Port</strong>
             </div>
           </div><input class="form-control" id="rpcPort" name="textinput" type="text" value="" placeholder="Port">
         </div>
@@ -60,7 +58,7 @@
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
             <div class="input-group-text">
-              <strong>👨‍💻 To:</strong>
+              <strong><i class="fas fa-handshake"></i> To:</strong>
             </div>
           </div><input class="form-control" id="address" placeholder="Address" type="text" minlength=99 maxlength=99 required>
         </div>
@@ -72,18 +70,18 @@
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
             <div class="input-group-text">
-              <strong>💸 TRTL</strong>
+              <strong><i class="fas fa-money-bill-alt"></i> WTIP</strong>
             </div>
-          </div><input class="form-control" id="amount" placeholder="Amount" min="0.01" type="number" required>
+          </div><input class="form-control" id="amount" placeholder="Amount" min="0" type="number" required>
         </div>
       </div>
       <div class="col-4">
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
             <div class="input-group-text">
-              <strong>💵 Fee</strong>
+              <strong><i class="fas fa-money-bill-wave-alt"></i> Fee</strong>
             </div>
-          </div><input class="form-control" id="fee" placeholder="Fee" value="0.1" min="0.1" type="number" required>
+          </div><input class="form-control" id="fee" placeholder="Fee" value="0.1" min="0.001" type="number" required>
         </div>
       </div>
     </div><br>
