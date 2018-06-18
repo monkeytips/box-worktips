@@ -1,7 +1,7 @@
 var config =
 {
     "host" : "localhost",
-    "port" : 8070,
+    "port" : 8083,
     "rpcPassword" : "test",
     "mixin" : 7,
     "addressLength" : 99,
